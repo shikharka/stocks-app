@@ -2,7 +2,7 @@
 
 ## Prerequisite
 
->node 
+>nodejs
 
 ## Install Dependencies
 
