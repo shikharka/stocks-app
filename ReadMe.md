@@ -43,7 +43,7 @@ node index
 
 ## Description:
 
-This Node Application creates a Express server hosting two APIs. It scrapes data from [in.finance.yahoo.com/quote/](https://in.finance.yahoo.com/quote/).
+This Node Application creates an Express server hosting two APIs. It scrapes data from [in.finance.yahoo.com/](https://in.finance.yahoo.com/).
 
 ### /getQuote
 
