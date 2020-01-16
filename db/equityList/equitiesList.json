@@ -1,28 +1,34 @@
 [
     {
-        "symbol": "NTPC",
-        "company": "NTPC Limited"
+        "symbol": "20MICRONS",
+        "company": "20 Microns Limited",
+        "series": "EQ",
+        "isin": "INE144J01027"
     },
     {
-        "symbol": "IDBI",
-        "company": "IDBI Bank Limited"
+        "symbol": "21STCENMGM",
+        "company": "21st Century Management Services Limited",
+        "series": "EQ",
+        "isin": "INE253B01015"
     },
     {
-        "symbol": "BHARTIARTL",
-        "company": "Bharti Airtel Limited"
+        "symbol": "3IINFOTECH",
+        "company": "3i Infotech Limited",
+        "series": "EQ",
+        "isin": "INE748C01020"
     },
     {
-        "symbol": "MONTECARLO",
-        "company": "Monte Carlo Fashions Limited"
+        "symbol": "3MINDIA",
+        "company": "3M India Limited",
+        "series": "EQ",
+        "isin": "INE470A01017"
     },
     {
-        "symbol": "RVNL",
-        "company": "Rail Vikas Nigam Limited"
+        "symbol": "3PLAND",
+        "company": "3P Land Holdings Limited",
+        "series": "EQ",
+        "isin": "INE105C01023"
     },
-    {
-        "symbol": "WIPRO",
-        "company": "Wipro Limited"
-    }
     {
         "symbol": "5PAISA",
         "company": "5Paisa Capital Limited",
@@ -6166,6 +6172,12 @@
         "company": "Neueon Towers Limited",
         "series": "BE",
         "isin": "INE333I01036"
+    },
+    {
+        "symbol": "NTPC",
+        "company": "NTPC Limited",
+        "series": "EQ",
+        "isin": "INE733E01010"
     },
     {
         "symbol": "NUCLEUS",
