@@ -1,0 +1,7 @@
+{
+    "port": 8080,
+    "connectionURL": "mongodb://127.0.0.1:27017",
+    "databaseName": "historicalQuotes",
+    "maxTry": 10,
+    "timeout": 1200000
+}

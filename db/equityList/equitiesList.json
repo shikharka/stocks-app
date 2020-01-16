@@ -1,0 +1,42 @@
+[
+    {
+        "symbol": "NTPC",
+        "company": "NTPC Limited"
+    },
+    {
+        "symbol": "IDBI",
+        "company": "IDBI Bank Limited"
+    },
+    {
+        "symbol": "BHARTIARTL",
+        "company": "Bharti Airtel Limited"
+    },
+    {
+        "symbol": "MONTECARLO",
+        "company": "Monte Carlo Fashions Limited"
+    },
+    {
+        "symbol": "RVNL",
+        "company": "Rail Vikas Nigam Limited"
+    },
+    {
+        "symbol": "WIPRO",
+        "company": "Wipro Limited"
+    },
+    {
+        "symbol": "HCL-INSYS",
+        "company": "HCL Infosystems Limited"
+    },
+    {
+        "symbol": "KAMDHENU",
+        "company": "Kamdhenu Limited"
+    },
+    {
+        "symbol": "MARUTI",
+        "company": "Maruti Suzuki India Limited"
+    },
+    {
+        "symbol": "HEROMOTOCO",
+        "company": "Hero MotoCorp Limited"
+    }
+]
