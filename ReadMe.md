@@ -46,6 +46,8 @@ node index
 This Node Application creates an Express server hosting two APIs. It scrapes data from [in.finance.yahoo.com/](https://in.finance.yahoo.com/) using cheerio module.
 
 Other Node modules used:
+>> axios: HTTP request
+
 >> mongoose: MongoDB Operations
 
 >> progress: Progress bar (/writeQuotes)
