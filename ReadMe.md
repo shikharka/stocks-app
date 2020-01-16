@@ -20,15 +20,11 @@ node index
 
 >Following values can be configured before starting the app
   
->>port: port on which the app will run.
-
->>connectionURL: MongoDB server ULR
-
->>databaseName: Database name for collections to be stored in.
-
->>maxTry: Maximum number of times to retry fetch quotes if it fails first time.
-
->>timeout: Timeout for each fetch call.
+* port: port on which the app will run.
+* connectionURL: MongoDB server ULR
+* databaseName: Database name for collections to be stored in.
+* maxTry: Maximum number of times to retry fetch quotes if it fails first time.
+* timeout: Timeout for each fetch call.
 
 ```json
 {
@@ -46,13 +42,11 @@ node index
 This Node Application creates an Express server hosting two APIs. It scrapes data from [in.finance.yahoo.com/](https://in.finance.yahoo.com/) using cheerio module.
 
 Other Node modules used:
->> axios: HTTP request
 
->> mongoose: MongoDB Operations
-
->> progress: Progress bar (/writeQuotes)
-
->> winston: Logging. Outputs to [./logs](./logs)
+* axios: HTTP request
+* mongoose: MongoDB Operations
+* progress: Progress bar (/writeQuotes)
+* winston: Logging. Outputs to [./logs](./logs)
 
 ### /getQuote
 
