@@ -43,7 +43,14 @@ node index
 
 ## Description:
 
-This Node Application creates an Express server hosting two APIs. It scrapes data from [in.finance.yahoo.com/](https://in.finance.yahoo.com/).
+This Node Application creates an Express server hosting two APIs. It scrapes data from [in.finance.yahoo.com/](https://in.finance.yahoo.com/) using cheerio module.
+
+Other Node modules used:
+>> mongoose: MongoDB Operations
+
+>> progress: Progress bar (/writeQuotes)
+
+>> winston: Logging. Outputs to [./logs](./logs)
 
 ### /getQuote
 
