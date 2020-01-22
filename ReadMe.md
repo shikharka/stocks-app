@@ -13,7 +13,7 @@ npm install
 ## Start Application
 
 ```bash
-node index
+npm start
 ```
 
 ## [Config Files](./config.json)

@@ -1,4 +1,5 @@
 const express = require('express');
+var cors = require('cors');
 
 logger = require('./lib/logger');
 const quotes = require('./src/quotes');
@@ -7,6 +8,8 @@ const config = require('./config.json');
 
 const app = express();
 const PORT = config.port;
+
+app.use(cors({origin: '*'}));
 
 app.post('/writeQuotes', (req, res) => {
     if (!req.query.exchange) {
@@ -36,7 +39,7 @@ app.get('/getQuote', (req, res) => {
         console.log('/getQuote Called.')
         logger.info('/getQuote Called.')
 
-        quotes.getQuote({ symbol: req.query.symbol }, req.query.exchange, 0).then(quote => res.send(quote));
+        quotes.getQuote({ symbol: req.query.symbol }, req.query.exchange, 0).then(quote => res.json(quote));
     }
 });
 
