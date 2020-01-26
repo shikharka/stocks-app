@@ -19,7 +19,7 @@ let successHandler = (response, symbol) => {
         const close = $('#atomic').find("span[class*='Trsdu']").first().text();
         const prevClose = $('[data-test="PREV_CLOSE-value"]').text();
         const open = $('[data-test="OPEN-value"]').text();
-        const volume = $('[data-test="TD_VOLUME-value"]').text();
+        const volume = $('[data-test="TD_VOLUME-value"]').text().replace(/,/g, '');
         const avgVolume3Months = $('[data-test="AVERAGE_VOLUME_3MONTH-value"]').text().replace(/,/g, '');
         const marketCap = $('[data-test="MARKET_CAP-value"]').text();
         const monthly5Years = $('[data-test="BETA_5Y-value"]').text();
