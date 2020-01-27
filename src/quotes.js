@@ -23,6 +23,10 @@ let getQuote = (stock, exchange, tryCount) => {
                     logger.info(`Couldn't get quote for  ${stock.symbol}. Trying again (${tryCount})`);
                     return getQuote(stock, exchange, tryCount).then(quote => quote);
                 }
+                else{
+                    logger.info(`Couldn't get quote for  ${stock.symbol}`); 
+                    throw (`Couldn't get quote for  ${stock.symbol}`);
+                }
             }
         })
         .catch(error => {

@@ -27,10 +27,16 @@ let successHandler = (response, symbol) => {
         const epsRatio = $('[data-test="EPS_RATIO-value"]').text();
 
         let currQuote = new QuoteProto(parseFloat(close), parseFloat(prevClose), parseFloat(open), parseFloat(volume), parseFloat(avgVolume3Months), parseFloat(marketCap), parseFloat(monthly5Years), parseFloat(peRatio), parseFloat(epsRatio));
-        logger.info(`Quote scraped for ${symbol} ======>  ${JSON.stringify(currQuote)}`)
-
+        
         //returns object of type currentQuotes. Convert String Values to Float.
-        return currQuote;
+        if(isNaN(currQuote.prevClose) && isNaN(currQuote.open)){
+            logger.error(`Couldn't Fetch Data for ${symbol}`)
+            throw `Couldn't Fetch Data for ${symbol}`
+        }
+        else{
+            logger.info(`Quote scraped for ${symbol} ======>  ${JSON.stringify(currQuote)}`)
+            return currQuote;
+        }
     }
 }
 

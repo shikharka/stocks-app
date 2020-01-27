@@ -9,7 +9,7 @@ const config = require('./config.json');
 const app = express();
 const PORT = config.port;
 
-app.use(cors({origin: '*'}));
+app.use(cors({ origin: '*' }));
 
 app.post('/writeQuotes', (req, res) => {
     if (!req.query.exchange) {
@@ -39,7 +39,13 @@ app.get('/getQuote', (req, res) => {
         console.log('/getQuote Called.')
         logger.info('/getQuote Called.')
 
-        quotes.getQuote({ symbol: req.query.symbol }, req.query.exchange, 0).then(quote => res.json(quote));
+        quotes.getQuote({ symbol: req.query.symbol }, req.query.exchange, 0)
+            .then(quote => res.json(quote))
+            .catch(err => {
+                res.status(404);
+                logger.error(`Couldn't get quote for ${req.query.symbol}`)
+                res.send(`Couldn't get quote for ${req.query.symbol}`);
+            });
     }
 });
 
