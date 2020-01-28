@@ -7,15 +7,13 @@ Build an API for fetching current quotes for NSE/BSE exhchange. This node app sc
 
 >nodejs
 
-## Install Dependencies
+## Quick Start
 
 ```bash
+# Install dependencies
 npm install
-```
 
-## Start Application
-
-```bash
+# Start Server
 npm start
 ```
 
