@@ -1,5 +1,8 @@
 # Fetch Stock Quotes
 
+## Task
+Build an API for fetching current quotes for NSE/BSE exhchange. This node app scrapes quotes from Yahoo Finance using cheerios module.
+
 ## Prerequisite
 
 >nodejs
