@@ -7,7 +7,7 @@ const quotes = require('./src/quotes');
 const config = require('./config.json');
 
 const app = express();
-const PORT = config.port;
+const PORT = process.env.PORT || config.port;
 
 app.use(cors({ origin: '*' }));
 
